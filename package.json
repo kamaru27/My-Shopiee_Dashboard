@@ -1,0 +1,53 @@
+{
+  "name": "free-nextadmin-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@headlessui/react": "^2.1.9",
+    "@hookform/resolvers": "^3.9.0",
+    "@mui/material": "^6.1.1",
+    "apexcharts": "^3.45.2",
+    "axios": "^1.7.4",
+    "dayjs": "^1.11.13",
+    "flatpickr": "^4.6.13",
+    "js-cookie": "^3.0.5",
+    "jsvectormap": "^1.5.3",
+    "next": "^14.1.4",
+    "object-to-formdata": "^4.5.1",
+    "react": "^18",
+    "react-apexcharts": "^1.4.1",
+    "react-dom": "^18",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.52.2",
+    "react-hot-toast": "^2.4.1",
+    "react-quill": "^2.0.0",
+    "react-select": "^5.8.0",
+    "react-table": "^7.8.0",
+    "react-toastify": "^10.0.5",
+    "use-router": "^0.4.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-table": "^7.7.19",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
