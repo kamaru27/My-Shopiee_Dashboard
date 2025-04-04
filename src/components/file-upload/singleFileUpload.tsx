@@ -37,8 +37,11 @@ const FileUploaderSingle = (props: Props) => {
   return (
     <Box
       {...getRootProps({ className: 'dropzone' })}
-      style={{ ...(props.error ? { border: '2px dashed red' } : {}), ...(props.file ? { height: 450 } : {}) }}
-    >
+      style={{
+        ...(props.error ? { border: '2px dashed red' } : {}),
+        ...(props.file ? { height: 450, position: 'relative' } : { width: '100%' })
+      }}
+        >
       <input {...getInputProps()} />
       {props.file ? (
         typeof props.file === 'string' ? (
@@ -47,6 +50,8 @@ const FileUploaderSingle = (props: Props) => {
             alt={props.file}
             className='single-file-image'
             src={storageUrl + props.file.replaceAll('\\', '/')}
+            width={450} // Set appropriate width
+            height={450} // Set appropriate height
           />
         ) : (
           <Image
@@ -54,6 +59,8 @@ const FileUploaderSingle = (props: Props) => {
             alt={props.file?.name || ''}
             className='single-file-image'
             src={URL.createObjectURL(props.file)}
+            width={450} // Set appropriate width
+            height={450} // Set appropriate height
           />
         )
       ) : (
